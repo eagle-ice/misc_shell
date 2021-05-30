@@ -92,6 +92,6 @@ function g () {
         else
             pathname=${lines[0]}
         fi
-        \cd $T/$pathname
+        \cd $pathname
     fi
 }
