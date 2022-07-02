@@ -4,11 +4,12 @@
 [color]
     ui = auto
 [alias]
-    lg = log
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     d = difftool
     m = mergetool
 [core]
     editor = vim
+	quotepath = false
 [diff]
     tool = vimdiff
 [difftool]
@@ -17,3 +18,9 @@
     tool = vimdiff3
 [mergetool]
     promtp = true
+[gui]
+	encoding = utf-8
+[i18n "commit"]
+	encoding = utf-8
+[i18n]
+	logoutputencoding = utf-8
