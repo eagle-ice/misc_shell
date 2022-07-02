@@ -1,0 +1,10 @@
+if [ -f $HOME/.vim/plugged/fzf/shell/completion.bash ]; then
+    source $HOME/.vim/plugged/fzf/shell/completion.bash
+fi
+
+if [ -f $HOME/.vim/plugged/fzf/shell/key-bindings.bash ]; then
+    source $HOME/.vim/plugged/fzf/shell/key-bindings.bash
+fi
+if [ -f ~/.vim/plugged/fzf/bin/fzf ]; then
+    export PATH=$HOME/.vim/plugged/fzf/bin/:$PATH
+fi

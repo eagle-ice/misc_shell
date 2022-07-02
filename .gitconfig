@@ -1,0 +1,19 @@
+[user]
+	email = eagle-ice@163.com
+	name = eagle_ice
+[color]
+    ui = auto
+[alias]
+    lg = log
+    d = difftool
+    m = mergetool
+[core]
+    editor = vim
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = true
+[merge]
+    tool = vimdiff3
+[mergetool]
+    promtp = true
