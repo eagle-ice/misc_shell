@@ -1,3 +1,5 @@
+export TERM=screen-256color
+
 if [ -f $HOME/.vim/plugged/fzf/shell/completion.bash ]; then
     source $HOME/.vim/plugged/fzf/shell/completion.bash
 fi
@@ -8,3 +10,30 @@ fi
 if [ -f ~/.vim/plugged/fzf/bin/fzf ]; then
     export PATH=$HOME/.vim/plugged/fzf/bin/:$PATH
 fi
+
+case $TERM in
+    screen-*)
+        PROMPT_COMMAND='printf "\033k%s\033\\" ${PWD##*/}';;
+esac
+
+export EDITOR=vim
+source ${HOME}/.vim/plugged/fzf/shell/completion.bash
+source ${HOME}/.vim/plugged/fzf/shell/key-bindings.bash
+
+export PATH=$HOME/bin/go/bin:$PATH
+#export PATH=$HOME/vim/bin:$PATH
+export PATH=$HOME/bin/ctags/bin:$PATH
+
+if [ -f /home/xiaokang/bin/global/bin/gtags ]; then
+    export PATH=$HOME/bin/global/bin:$PATH
+fi
+
+if [ -f /home/xiaokang/.vim/plugged/fzf/bin/fzf ]; then
+    export PATH=$HOME/.vim/plugged/fzf/bin/:$PATH
+fi
+
+if [ -f /home/xiaokang/source_code/node-v18.6.0-linux-x64/bin/node ]; then
+    export PATH=$HOME/source_code/node-v18.6.0-linux-x64/bin:$PATH
+fi
+
+source /home/xiaokang/source_code/misc_shell/qq.sh
