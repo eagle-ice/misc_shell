@@ -1,11 +1,11 @@
-export TERM=screen-256color
+# export TERM=screen-256color
 
 if [ -f $HOME/.vim/plugged/fzf/shell/completion.bash ]; then
-    source $HOME/.vim/plugged/fzf/shell/completion.bash
+    source $HOME/.vim/plugged/fzf/shell/completion.zsh
 fi
 
 if [ -f $HOME/.vim/plugged/fzf/shell/key-bindings.bash ]; then
-    source $HOME/.vim/plugged/fzf/shell/key-bindings.bash
+    source $HOME/.vim/plugged/fzf/shell/key-bindings.zsh
 fi
 if [ -f ~/.vim/plugged/fzf/bin/fzf ]; then
     export PATH=$HOME/.vim/plugged/fzf/bin/:$PATH
