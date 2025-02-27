@@ -3,4 +3,6 @@ alias rg='rg --no-ignore'
 alias dc='cd'
 alias node='/home/xiaokang/source_code/node-v18.6.0-linux-x64/bin/node'
 alias fixname="tmux set allow-rename off"
+alias python=python3
+alias pip=pip3
 #alias make='bear make'

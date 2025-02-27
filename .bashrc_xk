@@ -11,6 +11,10 @@ if [ -f ~/.vim/plugged/fzf/bin/fzf ]; then
     export PATH=$HOME/.vim/plugged/fzf/bin/:$PATH
 fi
 
+if [ -f $HOME/bin/nvim/bin/nvim ]; then
+    export PATH=$HOME/bin/nvim/bin/:$PATH
+fi
+
 case $TERM in
     screen-*)
         PROMPT_COMMAND='printf "\033k%s\033\\" ${PWD##*/}';;
